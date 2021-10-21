@@ -12,7 +12,7 @@ export default class ThemeContextProvider extends Component {
         return (
             <div>
                 <ThemeContext.Provider value={{...this.state}}>
-
+                    {this.props.children}
                 </ThemeContext.Provider>
             </div>
         )
